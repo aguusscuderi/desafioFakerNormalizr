@@ -1,0 +1,12 @@
+<div>
+    <ul stlye="display: flex; justify-content: center">
+        <% for (let i = 0; i < productos.length; i++) {%>
+            <div style="margin: 50px">
+                <li style="text-align: center;"><p><%=productos[i].name %></p></li>
+                <li style="text-align: center;"><p><%=productos[i].price %></p></li>
+                <img style="height: 100px; width: 150px" src="<%=productos[i].image %>"></img>
+            </div>
+        <%} %>
+    </ul> 
+</div>
+
